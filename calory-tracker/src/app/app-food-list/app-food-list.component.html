@@ -1,0 +1,13 @@
+<div class="card" *ngFor="let food of foodItems">
+  <img class="fruit" src="{{food.image}}" alt="Not-loading" />
+  <div class="container">
+    <h4>
+      <b>{{ food.name }}</b>
+    </h4>
+    <h4>
+      <b>{{ food.calories }}</b>
+    </h4>
+    <input class="input" type="text" name="eatCount" />
+    <button class="button" type="submit"></button>
+  </div>
+</div>

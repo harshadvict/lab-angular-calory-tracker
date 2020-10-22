@@ -1,0 +1,10 @@
+.heading{
+    background-color: tomato;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.content{
+    font-size: 30px;
+    margin:0px;
+    padding-left: 20px;
+}

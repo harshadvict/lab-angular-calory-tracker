@@ -1,0 +1,14 @@
+<div class="add">
+  <button class="button" (click)="displayAdd()">Add</button>
+</div>
+<form #formval="ngForm" (ngSubmit)="formReset(formval)">
+  <div class="add" [hidden]="isShow">
+    Name:<input type="text" [(ngModel)]=newFood.name name="fruitname" />
+    <br />
+    Calories:<input type="text" [(ngModel)]=newFood.calories name="calory" />
+    <br />
+    image:<input type="text" [(ngModel)]=newFood.image name="image" />
+    <br />
+    <button type="submit" (click)="addFood(newFood)">Add Food</button>
+  </div>
+</form>
